@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header__flex{ 
+   
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    justify-content: center;
+    
+}
+h1{
+    color: rgb(240, 228, 228);
+    font-family: 'Archivo Narrow', sans-serif; ;
+    font-size: 2rem;
+}
+
+h3{
+    font-family: 'Noticia Text', serif;  
+    font-size: 1.2rem; 
+}
+
+
+
+h2{
+    font-family: 'Noticia Text', serif;
+    color: black;
+    font-size: 2rem;
+}
+.logo {
+    display:flex;
+    align-items: center;
+    width: 40%;
+    padding-left: 2rem;
+} 
+.img__logo{
+    width: 30%;
+   
+}
+.bue{
+    color: white;
+}
+.navegador{
+    padding-right: 3rem;
+    width: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: left;
+    justify-content: space-between;
+    
+
+}
+.link{
+    color: white;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.tickets{
+    color: #28A847;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+
+}
+/*.imagenMain{
+    width: 100%;
+    height: 100%;
+    background-image: /*linear-gradient(to right,rgba(114, 56, 56, 0.5),rgba(77, 14, 14, 0.5)), url("./assets/imagenes/ba1.jpg");
+}*/
+
+.sectionPrincipal{
+    
+        
+    background-image:  url(../assets/images/ba1.jpg); 
+    background:linear-gradient((to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)));
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /*color: rgb(12, 12, 12);*/
+}
+.contenidoPrincipal{
+   /* background-color: aqua;*/
+    width: 60%;
+    text-align: right;
+    color: white;
+    padding: 1rem;
+   
+    
+
+}
+.tx{
+font-size: 1.2rem;
+}
+
+.boxFlex{
+    text-decoration-color: white;
+   width: 50%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 9rem;
+    padding-right: 1rem;
+    box-sizing: content-box;
+    border-radius: 3px;
+    
+   
+}
+.botones {
+    color: white;
+    font-size: 1.1rem; 
+    font-family: 'Noticia Text', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    width: 40%;
+    height: 30px;
+    border: solid rgb(214,214,214) 2px;
+}
+.botonesColor{
+   background-color: #28a643;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-sizing: content-box;      
+   padding-bottom: 1rem;
+   border-radius: 5px;
+   width: 40%;
+   height: 30px;
+   border: solid  #28a643 ;
+   font-size: 1.1rem;
+   font-family: 'Noticia Text', serif;
+   color: white;
+   
+}
+/*tarjetas*/
+.sectionTarjetas{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+} 
+
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+}
+.oradores{
+    font-size: 1.6rem;
+}
+.padreTarjetas{
+    width: 90%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjetas__flex{
+    width: 80%;
+    display: flex;
+    background-color:white;
+    justify-content: space-between;
+    
+
+}
+.tarjetas{
+    background-color: white;
+    box-shadow: 3px 3px 17px 5px rgb(146, 141, 141);
+    width: 30%;
+    border: 1px solid  rgb(214,214,214);
+    border-radius: 10px;
+}
+.tarjetaImagen{
+    width: 100%;
+    border-radius: 10px; 
+
+}
+.tarjetaContenido{
+    padding: 1rem;
+}
+.tarjetaParrafo{
+    width: 85%;
+}
+.cont_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 6rem;
+}
+.tit1, .tit2 {
+    font-family: 'Noticia Text', serif;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;      
+   
+    border-radius: 5px;
+    width: 40%;
+    height: 20px;
+    background-color: #fec107;
+   
+   
+    
+}  
+.tit2 {
+    background-color: #17a2b9;
+
+} 
+.color{
+   background-color :#6b747d;
+  /* font-family: 'Noticia Text', serif;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;      
+   
+    border-radius: 5px;
+    width: 40%;
+    height: 20px;*/
+}
+.color1{
+    background-color: #dc3346;
+
+}
+.pie{
+    color: white;
+} 
+
+    /*secccion dividida*/
+
+.sectionDividida{
+    display: flex;
+    height: 90vh;
+    padding-top: 1rem;
+    
+}
+.imagenIzq{
+   /* height: 95%;*/
+    width: 50%;
+    /*padding: 1rem;*/
+    padding-top: 15%;
+    background-image: url(../assets/images/1513286596901mardel.jpg);
+    background-size: cover;
+}
+.tx1{
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.contenidoDer{
+   /* height: 95%;*/
+    width: 50%;
+    padding:  2rem;
+    background-color: #352A40;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+}
+.botones1{
+  
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    box-sizing: content-box;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+    width: 30%;
+    height: 20px;
+    border: solid rgb(214,214,214) 2px;
+}
+
+/*pie de página*/
+
+
+.texto{
+    text-align: center;
+    height: 3%;
+  font-size: 1rem;
+}
+
+.formulario{
+    width: 50%;
+    margin-right: auto;
+    margin-left:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    height: 50%;
+}
+   
+.input { 
+   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+ .name{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: space-between;
+   padding-top: 0.5rem; ;
+   padding-bottom: 0.5rem;
+   box-sizing:border-box;
+   height: 3rem;
+ }
+
+.textarea{
+    height: 5rem;
+}
+.enviar{
+    height: 3rem;
+    background-color: #96C93E ;
+    border: solid  #96C93E ;
+}
+   
+input:hover{
+    
+    background-color: rgb(233, 135, 176);
+}
+        /*footer*/
+
+.container{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+    
+.colorFooter{
+    
+    background-color: rgb(13, 107, 107);
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 3rem;
+  
+    
+}
+.tablas{
+    background-color: blueviolet;
+   padding-right: 1rem;
+ 
+    /*display: flex;
+    /*align-items: center;
+    flex-direction: row;
+}
+/*
+    /*display: inline-table;
+    display: flex;
+    align-items: space-between;*/
+}
+
+
+
+
+             /*MEDIA QUERYS*/
+
+@media screen and (max-width: 412px ){
+    .header__flex{
+        flex-direction: column;
+
+    }
+
+    .logo{
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 2rem;
+    }
+    .navegador{
+        width: 100%;
+        flex-direction: column;
+        padding-right: initial;
+    }
+    .link {
+       display: inline-block;
+        padding: 1rem;
+        border-bottom: 1px solid rgb(223, 209, 209);
+        width: 100%;
+        justify-content: left;
+    }
+    .tickets{
+       padding: 1rem;
+    
+    }
+    /*seccion ppal párrafp*/
+    .sectionPrincipal{
+        justify-content: first baseline;
+        padding-right: 1rem;
+        
+    }
+    .contenidoPrincipal{
+        line-height: 1.5rem;
+    }
+    h1{
+     font-size: 2rem;
+     padding-bottom: 1rem;
+    }
+    .botones{
+        font-size: 1rem;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 0.5px;
+        height: 0.5px;
+    }
+    .botonesColor{
+        width: 0.5%;
+    }
+    
+    /*seccion tarjetas*/
+    .tarjetas__flex{
+        flex-direction: column;
+    }
+    .tarjetas{
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .sectionDividida{
+        flex-direction: column;
+       
+    }
+    .imagenIzq{
+       width: 100%;
+       height: 50%;
+    }
+    .contenidoDer{
+       width: 100%;
+      height: 50%;
+      font-size: 1rem;
+    }
+
+}
