@@ -5,71 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto html</title>
-    <link rel="shortcut icon" href="fabicon.ico">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=Noticia+Text&display=swap" rel="stylesheet">
 
+ 
 </head>
 <body>
-    <header>
-    <img src="" alt="Logo de codo a codo">
-    <h2>Conf.Bs.As</h2>
-    <nav>
+    <header class="header__flex">
+        <div class="logo">
+    <img class="img__logo" src="./assets/images/codoacodo.png" alt="Logo de codo a codo">
+       <h2 class="bue">Conf.Bs.As</h2>
+      </div>
+     
+       
+
+         <nav class="navegador"> 
     
-    <a href="#">La Conferencia</a>
-    <a href="./pages/los_oradores.html">Los Oradores</a>
-    <a href="./pages/lugaryfecha.html">Lugar y Fecha</a>
-    <a href="./pages/contacto.html">Conviertete en Orador</a>
-    <a href="./pages/comprartickets.html">Comprar tickets</a>
-    </nav>
+    <a class="link" href="#">La Conferencia</a>
+    <a class="link" href="#oradores">Los Oradores</a>
+    <a class="link" href="#lugaryfecha">Lugar y Fecha</a>
+    <a class="link" href="#formulario">Conviértete en Orador</a>
+    <a class="tickets" href="./pages/comprartickets.html">Comprar tickets</a>
+         </nav>
+     
+
 </header>
 <main>
-    <section>
+    <section class="sectionPrincipal">
        
-        <img src="" alt="Imagen de Buenos Aires Palacio de Aguas Argentinas">
-        <h1>Conferencia Bs.As.</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat officia praesentium, culpa unde dolores consequatur? Doloribus, autem at? Corporis eum et unde velit eos nostrum aspernatur, blanditiis corrupti omnis suscipit.</p>
-        <a href=""></a>
-         <a href=""></a>
-     </section>
+        <div class="contenidoPrincipal"> 
+       <!--<img class="imagenMain" src="./assets/images/ba1.jpg" alt="Imagen de Buenos Aires Palacio de Aguas Argentinas" >--> 
+       <h1>Conferencia Bs.As.</h1>
+        <p class="tx" >En el Museo de Aguas Argentinas, en la semana de Conferencias Bs. As. se presentaran tres figuras internacionales del área de la tecnología. Donde también participarán otros oradoresde distintas áreas de interés general. </p>
+        <section class="boxFlex">
+        <a  class="botones" href="./pages/contacto.html">Quiero ser Orador</a>
+         <a  class="botonesColor"href=".pages/comprarticket.html">Comprar Tickets</a>
+        </div>
+    </section>
+    </section>
 </main>
-            <section>
-                <div>
-                    <img src="" alt="Imagen card"loading="lazy">
+        <section class="sectionTarjetas" id="oradores">
+            <div class="titulo">
+               <h3>Conoce a los</h3>
+                <h2 class="oradores"> ORADORES</h2>
+                </div>
+                <div class="padreTarjetas">
+                   <div class="tarjetas__flex">
+                    <div class="tarjetas">
+                    <img class="tarjetaImagen" src="./assets/images/steve.jpg" alt="Imagen card" loading="lazy" width="300px" >
+                    <div class="tarjetaContenido">
+                        <div class="cont_flex">
+                        <h4 class="tit1">JavaScript</h4>
+                        <h4 class="tit2 pie">React</h4>
+                    </div>
                     <h3>Steve Jobs</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate error neque ex dolor labore possimus corporis reprehenderit sed corrupti, est accusantium? Facere est nulla dolorem aspernatur vel eum quod voluptate?</p>
+                <div class="tarjetaParrafo">
+                    <p>Empresario, diseñador industrial, magnate empresarial, propietrario de medios e inversor estaunidense. Cofundador y presidente ejecutivo se Apple.</p>
+                </div> 
                     <a href="">leer Más</a>
-    
                 </div>
-                <br>
-                <div>
-                    <img src="" alt="Imagen card"loading="lazy">
+                </div>
+                <div class="tarjetas">
+                    <img class="tarjetaImagen"  src="./assets/images/bill.jpg" alt="Imagen card"loading="lazy" width="280px">
+                    <div class="tarjetaContenido"> 
+                        <div class="cont_flex">
+                       <h4 class="tit1">JavaScript</h4>
+                        
+                        <h4 class="tit2 pie">React</h4>
+                    </div>
                     <h3>Bill Gates</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate error neque ex dolor labore possimus corporis reprehenderit sed corrupti, est accusantium? Facere est nulla dolorem aspernatur vel eum quod voluptate?</p>
-                    <a href="">leer Más</a>  
-                    
-                <div>
-                 <br>
-                </div>img src="" alt="Imagen card"loading="lazy">
-                <h3>Ada Lovelace</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate error neque ex dolor labore possimus corporis reprehenderit sed corrupti, est accusantium? Facere est nulla dolorem aspernatur vel eum quod voluptate?</p>
-                <a href="">leer Más</a>
+                    <div class="tarjetaParrafo">
+                    <p>Empresario informático y filántropo estadounidence, creador y fundador junto con Poul Allan la empresa Microsoft</p>
+                    </div>
+                    <a href="">leer Más</a>   
+                    </div>
+                </div> 
+                <div class="tarjetas">
+                    <img class="tarjetaImagen" src="./assets/images/ada.jpeg" alt="Imagen card"loading="lazy" width="280">
+                    <div class="tarjetaContenido">
+                        <div class="cont_flex">
+                        <h4 class="tit1 pie color">Negocios</h4>
+                        <h4 class="tit1 pie color1">Startups</h4>
+                    </div>
+                    <h3>Ada Lovelace</h3>
+                    <div class="tarjetaParrafo">
+                    <p>Matemática y escritora británica célebre por su trabajo acerca de la computadora macánica de Charles Baddage, la máquina analítica.</p>
+                    </div>
+                    <a href="">leer Más</a>
                 </div>
+            </div>
+        </div>
+    </div>
+        
             </section>
     </section>
-    <section>
-    <img src="" alt="Imagen de Hululu">
-    <div>
-        <h3>Bs.As. Octubre</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente perferendis omnis quos inventore atque suscipit modi vero explicabo assumenda? Vel nesciunt et placeat repellat quisquam earum natus modi facere?</p>
-        <a href="">Conoce más</a>
-    </div>
-    </section>
-    <section>
-        <!..clase del miercoles, formularios-->
-        <table>
+    <section class="sectionDividida" id="lugaryfecha">
+        <div class="imagenIzq">
+
+        </div>
+   
+        <div class="contenidoDer">
+        <h2 class="tx1">Bs.As. Octubre</h2>
+        <p>La ciudad de Buenos Aires cuenta con diferentes lugares que podes disfrutar, uno de ellos es Mar del Plata a pocos kilometros de la ciudad. Con sus playas y su gente muy coordial te haran pasar unos dias maravillosos</p> 
+            <p>Te esperan distintos eventos de interés general que te motivarán a emprender, innovar y aprender. </p>
+       <br>
+        <a class="botones1" href="">Conoce más</a>
+      </div>
+        </section>
+         <section >
+         <table class="tablas">
             <thead>
                <tr>
-                <th>Orador</th>
-                <th>Día</th>
+                <th >Orador</th>
+                <th >Día</th>
                 <th>Horario</th>
                </tr>
 
@@ -94,81 +144,61 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="3"> <a href="" >Sacar entradas</a></td>
+                    <td class="boton pie"colspan="3"> <a href="" >Sacar entradas</a></td>
                 </tr>
             </tfoot>
-           
-
-           
+                     
         </table>
         
     </section>
     <br>
-    <section>
+    <section class="formulario" id="formulario">
       <form action="">
-        <div>
-            <input type="text" placeholder="Nombre"autofocus>
+       <div class="texto">
+        <h3>Conviérte en un</h3>
+        <h2>Orador</h2>
+        <p>Anótate como orador para dar una charla motivacional. Cuéntanos de qué quieres hablar.</p>
+       </div>
+        <div class="input" >
+            <div  class="name">
+            <input type="text" placeholder="Nombre">
             <input type="text" placeholder="Apellido">
         </div>
-    <div>
-        <label for="">Email</label>
-        <input type="email">
     </div>
-    <div>
+    <!--<div>
         <label for="">Ingrese contraseña</label>
         <input type="password" required>
+    </div>-->
+
+        <div class="input">
+           <textarea class="textarea" name="" id="" cols="45" rows="10" placeholder="Sobre que quieres hablar"></textarea>
+        <p>Recuerda incluir un título para tu charla. </p>
     </div>
 
-        <div>
-           <textarea name="" id="" cols="45" rows="10" placeholder="Sobre que quieres hablar"></textarea>
+    </div >
+        <div class="input">
+        <!--<label for="">Email</label>-->
+        <input class ="enviar" type="submit" value="Enviar">
         </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-        <div>
-            <p>indique su provincia</p>
-            <br>
-            <select >
-                <option value="">Salta</option>
-                <option value="">Santa Fé</option>
-                <option value="">Entre Rios</option>
-                <option value="">Corrientes</option>
-                <option value="">Cordoba</option>
-                <option value="">Buenos Aires</option>
-                <option value="">Mendoza</option>
-            </select>
-            <br>
-            <div>
-                <p>Términos y Condiciones</p>
-                <input type="checkbox" name="términos">
-            </div>
-            <br>
-            <input type="submit" value="enviar formulario">
-            <input type="reset" value="limpiar">
-        </div>    
-
+        </section>
     </form> 
-    </section>
-    <br>
-    <aside>
-        <h2>Aca va la propaganda</h2>
-        <img src="" alt="Propaganda">
-    </aside>
-    <article>
-        <header>el header de la noticia</header>
-        <h1>este es el título principal de la noticia</h1>
-        <footer>este es el footer de la noticia</footer>
-        
-   
 
-    </article>
-    
-    <footer>
-        <a href=""></a> 
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+    <footer class="colorFooter">
+        <div class="container">
+            
+      
+     <a class="pie" href="https://codoacodo.com" target="_blank">Preguntas frecuentes</a>
+     <a class="pie" href="https://codoacodo.com" target="_blank">Contáctanos</a>
+      <a class="pie" href="https://codoacodo.com" target="_blank">Prensa</a>
+      <a class="pie" href="https://codoacodo.com" target="_blank">Términos y Condiciones</a>
+     <a class="pie" href="https://codoacodo.com" target="_blank">Conferencias</a>
+      <a class="pie" href="https://codoacodo.com" target="_blank">Privacidad</a> 
+      <a class="pie" href="https://codoacodo.com" target="_blank">Estudiante</a> 
+      
+    </div>   
+    </div>
     </footer>
-</body>
-</html>
+  
+
+
+    </html>

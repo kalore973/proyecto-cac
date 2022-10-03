@@ -65,16 +65,12 @@ h2{
     font-size: 1.1rem;
 
 }
-/*.imagenMain{
-    width: 100%;
-    height: 100%;
-    background-image: /*linear-gradient(to right,rgba(114, 56, 56, 0.5),rgba(77, 14, 14, 0.5)), url("./assets/imagenes/ba1.jpg");
-}*/
 
 .sectionPrincipal{
     
-        
+     
     background-image:  url(../assets/images/ba1.jpg); 
+    filter: brightness(75%);  
     background:linear-gradient((to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)));
     height: 100vh;
     width: 100%;
@@ -84,24 +80,27 @@ h2{
     /*color: rgb(12, 12, 12);*/
 }
 .contenidoPrincipal{
-   /* background-color: aqua;*/
-    width: 60%;
-    text-align: right;
-    color: white;
-    padding: 1rem;
    
-    
-
+     width: 60%;
+     text-align: right;
+     color: white;
+     padding: 1rem;
+     padding-top: 15rem;
 }
+
+
 .tx{
 font-size: 1.2rem;
+
 }
 
 .boxFlex{
+     
     text-decoration-color: white;
    width: 50%;
-    height: 40px;
+    height: 50px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 9rem;
@@ -112,6 +111,7 @@ font-size: 1.2rem;
    
 }
 .botones {
+    
     color: white;
     font-size: 1.1rem; 
     font-family: 'Noticia Text', serif;
@@ -121,6 +121,7 @@ font-size: 1.2rem;
     box-sizing: content-box;
     padding-bottom: 1rem;
     border-radius: 5px;
+    
     width: 40%;
     height: 30px;
     border: solid rgb(214,214,214) 2px;
@@ -143,7 +144,7 @@ font-size: 1.2rem;
 }
 /*tarjetas*/
 .sectionTarjetas{
-    background-color:white;
+background-color:white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,8 +160,7 @@ font-size: 1.2rem;
     font-size: 1.6rem;
 }
 .padreTarjetas{
-    width: 90%;
-   
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,7 +195,14 @@ font-size: 1.2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-right: 6rem;
+    padding-right: 1.5rem;
+    padding-left: 0.3rem;
+}
+.cont_flex1{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    padding-left: 0.3rem;
 }
 .tit1, .tit2 {
     font-family: 'Noticia Text', serif;
@@ -209,8 +216,6 @@ font-size: 1.2rem;
     width: 40%;
     height: 20px;
     background-color: #fec107;
-   
-   
     
 }  
 .tit2 {
@@ -218,18 +223,9 @@ font-size: 1.2rem;
 
 } 
 .color{
-   background-color :#6b747d;
-  /* font-family: 'Noticia Text', serif;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: content-box;      
-   
-    border-radius: 5px;
-    width: 40%;
-    height: 20px;*/
+    background-color :#6b747d;
 }
+
 .color1{
     background-color: #dc3346;
 
@@ -247,9 +243,7 @@ font-size: 1.2rem;
     
 }
 .imagenIzq{
-   /* height: 95%;*/
     width: 50%;
-    /*padding: 1rem;*/
     padding-top: 15%;
     background-image: url(../assets/images/1513286596901mardel.jpg);
     background-size: cover;
@@ -261,7 +255,6 @@ font-size: 1.2rem;
     padding-top: 2rem;
 }
 .contenidoDer{
-   /* height: 95%;*/
     width: 50%;
     padding:  2rem;
     background-color: #352A40;
@@ -283,6 +276,13 @@ font-size: 1.2rem;
     width: 30%;
     height: 20px;
     border: solid rgb(214,214,214) 2px;
+}
+.tablas{
+    font-family: 'Noticia Text', serif;
+    color: black;
+   width: 100%;
+   border-style: solid ;
+ 
 }
 
 /*pie de página*/
@@ -334,60 +334,66 @@ font-size: 1.2rem;
    
 input:hover{
     
-    background-color: rgb(233, 135, 176);
+    background-color: rgb(255,210,120);
 }
         /*footer*/
 
 .container{
+    width: 100%;
     padding-top: 1rem;
     display: flex;
     justify-content: space-around;
-    color: black;
+   
 }
     
 .colorFooter{
     
-    background-color: rgb(13, 107, 107);
+    background-color: #163947; 
     padding-left: 15px;
     padding-right: 15px;
     height: 3rem;
   
     
 }
-.tablas{
-    background-color: blueviolet;
-   padding-right: 1rem;
- 
-    /*display: flex;
-    /*align-items: center;
-    flex-direction: row;
+
+
+.boton, .pie{
+    color: aliceblue;
+    font-family: 'Noticia Text', serif;
+    text-align: center;
+    box-sizing: border-box;
+    width: 20%;
+    margin-right: auto;
+    margin-left:auto;
+
 }
-/*
-    /*display: inline-table;
-    display: flex;
-    align-items: space-between;*/
+
+th,td{
+    padding: 0.3% ;
 }
 
 
-
+    
 
              /*MEDIA QUERYS*/
 
-@media screen and (max-width: 412px ){
+@media screen and (max-width: 450px ){
     .header__flex{
         flex-direction: column;
+       
 
     }
 
     .logo{
         width: 100%;
         justify-content: space-between;
-        padding-right: 2rem;
+        padding-right: 2.5rem;
     }
     .navegador{
         width: 100%;
         flex-direction: column;
         padding-right: initial;
+       
     }
     .link {
        display: inline-block;
@@ -402,35 +408,57 @@ input:hover{
     }
     /*seccion ppal párrafp*/
     .sectionPrincipal{
-        justify-content: first baseline;
-        padding-right: 1rem;
-        
+       padding-right: 3rem;
+      
     }
+
     .contenidoPrincipal{
-        line-height: 1.5rem;
+        line-height: 2rem;
+        width: 100%;
+        text-align: center;
+       margin-left: 2.5rem;
+        padding-top: 1rem;
     }
     h1{
      font-size: 2rem;
      padding-bottom: 1rem;
     }
-    .botones{
-        font-size: 1rem;
-        justify-content: center;
-        box-sizing: border-box;
-        width: 0.5px;
-        height: 0.5px;
-    }
-    .botonesColor{
-        width: 0.5%;
+    
+    .boxFlex{
+        flex-direction: column;
+      display: inline-block;
+      margin-top: 1rem;
+      width: 50%;
+      height: 35px;
+      text-align: justify;
+     
+    }    
+    .botones {
+    
+        justify-content: space-around;
+  
     }
     
-    /*seccion tarjetas*/
-    .tarjetas__flex{
-        flex-direction: column;
+ 
+    .botonesColor{
+        width: 0.5%;
+        padding-top: 2rem;
     }
+
+    
+    /*seccion tarjetas*/
+        
+    
+   .tarjetas__flex{
+      flex-direction: column;
+
+    }   
+    
     .tarjetas{
         width: 100%;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+       
     }
     .sectionDividida{
         flex-direction: column;
@@ -438,12 +466,62 @@ input:hover{
     }
     .imagenIzq{
        width: 100%;
-       height: 50%;
+       height: 40%;
     }
     .contenidoDer{
        width: 100%;
-      height: 50%;
+      height: 60%;
       font-size: 1rem;
+     justify-content: first baseline;
+      padding-left: 1.5rem;
+      padding-bottom: 5rem;
     }
+    /*.tx1{
+        padding-top: 0;
+    }*/
+    .botones1{  
+   text-align: center;
+    font-size: 1rem;
+    box-sizing: content-box;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+    width: 30%;
+    height: 10px;
+    }
+    .formulario{
+        width: 100%;
+      
+    }
+    .name{
+        flex-direction: column;
+      
+      }
+    .texto{
+        height: 1%;
+
+       /* text-align: center;
+        height: 3%;
+      font-size: 1rem;*/
+    }
+    .enviar{
+        height: 2rem;
+    }
+    .colorFooter{
+        padding-bottom: 2rem;
+       
+    }
+
+      .container{
+        flex-direction: row;
+     /* display: inline-block;*/
+      }
+       
+
+    
+       
+ .pie{
+    font-size: 0.8rem;
+ }
 
 }
